@@ -56,14 +56,16 @@ And here. | Okay. | I think we get it.
     }
 
     return (
-        <div className='row mb-4'>
-            <div className='col-10 justify-content-center'>
-                <h2>Markdown Editor</h2>
-                <textarea id="editor" className="form-control " value={markdownText} onChange={handleEditorChange} />
-
+        <>
+            <div className='row mb-4'>
+                <div className='col-10 justify-content-center'>
+                    <h2>Markdown Editor</h2>
+                    <textarea id="editor" className="form-control " value={markdownText} onChange={handleEditorChange} />
+                </div>
             </div>
             <Preview markdownText={markdownText} />
-        </div>
+        </>
+
     );
 }
 
